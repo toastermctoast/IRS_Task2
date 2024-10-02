@@ -3906,6 +3906,8 @@
         <ObjectRef ID="3647" />
         <ObjectRef ID="3661" />
         <ObjectRef ID="3668" />
+        <ObjectRef ID="3678" />
+        <ObjectRef ID="3680" />
       </Instances>
       <Transform>
         <RowX X="1" Y="0" Z="0" W="0" />
@@ -3921,6 +3923,10 @@
         <ObjectRef ID="3675" />
         <ObjectRef ID="3676" />
       </Attachments>
+      <Definitions>
+        <ObjectRef ID="3677" />
+        <ObjectRef ID="3679" />
+      </Definitions>
       <BidirectionalAttachments>
         <ObjectRef ID="3656" />
       </BidirectionalAttachments>
@@ -3938,7 +3944,7 @@
     </TaskSimulationConfiguration>
     <IRC5Controller ID="1196" Name="" Parent="9" StopAtBreakpoints="true">
       <UniqueId Value="{1249d834-91c6-46cb-8663-3ff095ba43c8}" />
-      <SystemIdentity Value="{FBEF28D2-4858-4B88-AA40-C40BB483DAAA}" />
+      <SystemIdentity Value="{5E655EC4-635B-4AB9-ADD1-785B6AF68B0E}" />
       <RAPIDData ID="1197" />
       <MechanicalUnits>
         <ObjectRef ID="3632" />
@@ -3952,7 +3958,7 @@
         <RowZ X="0" Y="0" Z="1" W="0" />
         <RowT X="0" Y="0" Z="0" W="1" />
       </ControllerWorld>
-      <SystemPath Value="..\2\Virtual Controllers\IRB14000" />
+      <SystemPath Value="..\Virtual Controllers\IRB14000" />
       <MechMovingCtrlWorld ID="-1" />
       <BrushColors>
         <Element Key="1">
@@ -12205,7 +12211,7 @@
       <Definition ID="32" DocID="1" />
       <Transform>
         <RowX X="-0.624161406011862" Y="-0.659230154048851" Z="0.419330589437528" W="0" />
-        <RowY X="0.411872081815884" Y="0.178448120463612" Z="0.893598151589211" W="0" />
+        <RowY X="0.411872081815884" Y="0.178448120463611" Z="0.893598151589211" W="0" />
         <RowZ X="-0.663915602667949" Y="0.730460041546239" Z="0.160138066175164" W="0" />
         <RowT X="0.560657694254151" Y="-0.374499272469958" Z="0.464138278144542" W="1" />
       </Transform>
@@ -12235,7 +12241,7 @@
       <Definition ID="33" DocID="1" />
       <Transform>
         <RowX X="-0.869632650622656" Y="-0.123093845720569" Z="-0.478107684645138" W="0" />
-        <RowY X="0.444388210171347" Y="-0.617054168446595" Z="-0.649433038783359" W="0" />
+        <RowY X="0.444388210171347" Y="-0.617054168446595" Z="-0.649433038783358" W="0" />
         <RowZ X="-0.215077129494793" Y="-0.777233593167718" Z="0.591311905866843" W="0" />
         <RowT X="0.389929526973452" Y="0.164679968814431" Z="0.221415964183882" W="1" />
       </Transform>
@@ -12294,8 +12300,8 @@
       <UniqueId Value="{64573fd5-5638-43f0-9c36-365e06f6d8e9}" />
       <Definition ID="35" DocID="1" />
       <Transform>
-        <RowX X="-0.525409640611461" Y="-0.0337418524708659" Z="-0.850180096770308" W="0" />
-        <RowY X="0.724578673270023" Y="-0.541532578333658" Z="-0.42629592168534" W="0" />
+        <RowX X="-0.525409640611461" Y="-0.0337418524708659" Z="-0.850180096770307" W="0" />
+        <RowY X="0.724578673270023" Y="-0.541532578333659" Z="-0.42629592168534" W="0" />
         <RowZ X="-0.446016205753545" Y="-0.840002353565235" Z="0.308975064058698" W="0" />
         <RowT X="0.44094733544307" Y="0.179966985460893" Z="0.551504130608293" W="1" />
       </Transform>
@@ -12325,7 +12331,7 @@
       <Definition ID="36" DocID="1" />
       <Transform>
         <RowX X="0.119439840317451" Y="0.136637045381017" Z="-0.983394347337063" W="0" />
-        <RowY X="0.864114322633272" Y="-0.502063589253609" Z="0.0351936040471017" W="0" />
+        <RowY X="0.864114322633272" Y="-0.50206358925361" Z="0.0351936040471015" W="0" />
         <RowZ X="-0.488917745602451" Y="-0.853968658778136" Z="-0.178036422845687" W="0" />
         <RowT X="0.121477946783893" Y="0.0966899379832918" Z="0.830762585308622" W="1" />
       </Transform>
@@ -12355,8 +12361,8 @@
       <Definition ID="37" DocID="1" />
       <Transform>
         <RowX X="0.119439840317452" Y="0.136637045381016" Z="-0.983394347337063" W="0" />
-        <RowY X="0.864114322633271" Y="-0.502063589253612" Z="0.0351936040471027" W="0" />
-        <RowZ X="-0.488917745602453" Y="-0.853968658778135" Z="-0.178036422845686" W="0" />
+        <RowY X="0.864114322633271" Y="-0.502063589253612" Z="0.0351936040471026" W="0" />
+        <RowZ X="-0.488917745602453" Y="-0.853968658778135" Z="-0.178036422845687" W="0" />
         <RowT X="0.121477946783893" Y="0.0966899379832927" Z="0.830762585308621" W="1" />
       </Transform>
       <Source Value="" />
@@ -12515,7 +12521,7 @@
       <Definition ID="43" DocID="1" />
       <Transform>
         <RowX X="-0.869632650622345" Y="0.123093845721438" Z="-0.47810768464548" W="0" />
-        <RowY X="-0.444388210171945" Y="-0.617054168447143" Z="0.649433038782429" W="0" />
+        <RowY X="-0.444388210171945" Y="-0.617054168447142" Z="0.64943303878243" W="0" />
         <RowZ X="-0.215077129494816" Y="0.777233593167146" Z="0.591311905867587" W="0" />
         <RowT X="0.389929526973598" Y="-0.16467996881423" Z="0.221415964183751" W="1" />
       </Transform>
@@ -12575,7 +12581,7 @@
       <Definition ID="45" DocID="1" />
       <Transform>
         <RowX X="-0.525409640610998" Y="0.0337418524718286" Z="-0.850180096770556" W="0" />
-        <RowY X="-0.724578673270311" Y="-0.541532578334035" Z="0.426295921684371" W="0" />
+        <RowY X="-0.724578673270312" Y="-0.541532578334035" Z="0.426295921684371" W="0" />
         <RowZ X="-0.446016205753622" Y="0.840002353564954" Z="0.308975064059352" W="0" />
         <RowT X="0.440947335443141" Y="-0.179966985460918" Z="0.55150413060816" W="1" />
       </Transform>
@@ -12718,9 +12724,9 @@
       </ChildInstances>
       <Transform>
         <RowX X="0.428060838229368" Y="0.118323252076558" Z="0.895970717597622" W="0" />
-        <RowY X="0.25643581959287" Y="-0.966547655088529" Z="0.0051284376373454" W="0" />
-        <RowZ X="0.86660520954129" Y="0.227563701984509" Z="-0.444083519548972" W="0" />
-        <RowT X="-0.00957836850715105" Y="-0.182609892722701" Z="0.198627808149411" W="1" />
+        <RowY X="0.256435819592871" Y="-0.966547655088528" Z="0.00512843763734494" W="0" />
+        <RowZ X="0.86660520954129" Y="0.22756370198451" Z="-0.444083519548972" W="0" />
+        <RowT X="-0.009578368507151" Y="-0.182609892722701" Z="0.198627808149411" W="1" />
       </Transform>
       <Source Value="" />
       <SourceFileTime HighPart="0" LowPart="0" />
@@ -13141,6 +13147,62 @@
         <RowT X="0" Y="0" Z="0" W="1" />
       </OriginalTransform>
     </Attachment>
+    <PartDef ID="3677" Name="" Parent="1193">
+      <GeoPart StreamID="-1" />
+      <GfxData StreamType="GfxDataStream" StreamID="408700bffee44a2b83bdb83603c337c9" StreamChangeRef="15faff5ba47c42bcac967a442bdc1791" />
+      <BoundingBox>
+        <Min X="0" Y="0" Z="0" />
+        <Max X="0.25" Y="0.015" Z="0.25" />
+      </BoundingBox>
+    </PartDef>
+    <ComponentInstance ID="3678" Name="Magazine 16.1 mm holes" Parent="1193" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0">
+      <Definition ID="3677" />
+      <Transform>
+        <RowX X="1" Y="0" Z="0" W="0" />
+        <RowY X="0" Y="0" Z="1" W="0" />
+        <RowZ X="0" Y="-1" Z="0" W="0" />
+        <RowT X="0.218774" Y="-0.218596" Z="0" W="1" />
+      </Transform>
+      <Source Value="" />
+      <SourceFileTime HighPart="0" LowPart="0" />
+      <ComponentType Value="Part" />
+      <ClipPlane ID="-1" />
+      <Skeleton />
+      <PhysicsMaterial SurfaceViscosity="5E-09" SurfaceRoughness="0.7" SurfaceAdhesion="0" SurfaceAdhesionOverlap="0" Density="7800" Damping="0.05" PoissonsRatio="0.3" Restitution="0.5" YoungsModulus="200000000000" CableDamping="0" CableYoungsModulus="0" />
+      <PhysicsGeometry UseOriginal="false" />
+      <PhysicsSurfaceVelocity Speed="0" Enabled="false">
+        <Direction X="0" Y="0" Z="0" />
+        <ControlPoints />
+      </PhysicsSurfaceVelocity>
+    </ComponentInstance>
+    <PartDef ID="3679" Name="" Parent="1193">
+      <GeoPart StreamID="-1" />
+      <GfxData StreamType="GfxDataStream" StreamID="764fcd1832694740b2dff1fb258f6b7b" StreamChangeRef="2ebc9b6bbb534002951f9a3092ebccf8" />
+      <BoundingBox>
+        <Min X="5.13941049575806E-05" Y="0" Z="0" />
+        <Max X="0.309948608398438" Y="0.01" Z="0.31" />
+      </BoundingBox>
+    </PartDef>
+    <ComponentInstance ID="3680" Name="Tray" Parent="1193" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0">
+      <Definition ID="3679" />
+      <Transform>
+        <RowX X="1" Y="0" Z="0" W="0" />
+        <RowY X="0" Y="0" Z="1" W="0" />
+        <RowZ X="0" Y="-1" Z="0" W="0" />
+        <RowT X="0.171804" Y="0.481105" Z="0" W="1" />
+      </Transform>
+      <Source Value="" />
+      <SourceFileTime HighPart="0" LowPart="0" />
+      <ComponentType Value="Part" />
+      <ClipPlane ID="-1" />
+      <Skeleton />
+      <PhysicsMaterial SurfaceViscosity="5E-09" SurfaceRoughness="0.7" SurfaceAdhesion="0" SurfaceAdhesionOverlap="0" Density="7800" Damping="0.05" PoissonsRatio="0.3" Restitution="0.5" YoungsModulus="200000000000" CableDamping="0" CableYoungsModulus="0" />
+      <PhysicsGeometry UseOriginal="false" />
+      <PhysicsSurfaceVelocity Speed="0" Enabled="false">
+        <Direction X="0" Y="0" Z="0" />
+        <ControlPoints />
+      </PhysicsSurfaceVelocity>
+    </ComponentInstance>
   </Objects>
   <ReferencedDocuments>
     <DocRef ID="1" DocumentType="ComponentLibrary" Location="%ABB.RobotStudio.Models.IRB14000%\IRB14000_0.5_0.5__01.rslib" RelativeLocation="..\..\..\..\..\..\..\ProgramData\ABB\DistributionPackages2\ABB.RobotStudio.Models.IRB14000-1.1\RobotStudio\LibraryComponents\IRB14000_0.5_0.5__01.rslib" GUID="{B161BA02-3824-4351-9363-82439DFF8D32}" />
