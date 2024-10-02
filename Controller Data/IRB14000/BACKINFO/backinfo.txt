@@ -42,6 +42,7 @@ MOC.cfg
 >>TASK1: (T_ROB_R,,)
 SYSMOD\user.sys @ 
 PROGMOD\Module1.mod @ 
+PROGMOD\CalibData.mod @ 
 
 >>TASK2: (T_ROB_L,,)
 SYSMOD\user.sys @ 

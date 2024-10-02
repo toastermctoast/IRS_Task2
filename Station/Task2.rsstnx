@@ -35,7 +35,12 @@
         <ObjectRef ID="1194" />
       </ControllerConfigurations>
     </SimulationConfiguration>
-    <EventTable ID="4" Name="" Parent="3" />
+    <EventTable ID="4" Name="" Parent="3">
+      <EventTableEntries>
+        <ObjectRef ID="3759" />
+        <ObjectRef ID="3763" />
+      </EventTableEntries>
+    </EventTable>
     <GraphicsRoot ID="5" Name="" Parent="1">
       <Lights>
         <ObjectRef ID="6" />
@@ -68,7 +73,7 @@
       <IRC5Controllers>
         <ObjectRef ID="1196" />
       </IRC5Controllers>
-      <ActiveTask ID="2415" />
+      <ActiveTask ID="1198" />
       <MechUnitToTask>
         <Element Key="3632">
           <Value ID="1198" />
@@ -3908,6 +3913,9 @@
         <ObjectRef ID="3668" />
         <ObjectRef ID="3678" />
         <ObjectRef ID="3680" />
+        <ObjectRef ID="3847" />
+        <ObjectRef ID="3851" />
+        <ObjectRef ID="3853" />
       </Instances>
       <Transform>
         <RowX X="1" Y="0" Z="0" W="0" />
@@ -3920,29 +3928,45 @@
       <ComponentType Value="AssemblyRoot" />
       <ClipPlane ID="-1" />
       <Attachments>
-        <ObjectRef ID="3675" />
         <ObjectRef ID="3676" />
+        <ObjectRef ID="3845" />
       </Attachments>
       <Definitions>
         <ObjectRef ID="3677" />
         <ObjectRef ID="3679" />
+        <ObjectRef ID="3846" />
+        <ObjectRef ID="3850" />
+        <ObjectRef ID="3852" />
       </Definitions>
       <BidirectionalAttachments>
         <ObjectRef ID="3656" />
       </BidirectionalAttachments>
       <Textures />
     </AssemblyRoot>
-    <ControllerSimulationConfiguration ID="1194" Name="" Parent="3" AutoStartProgram="true" AutoStopSimulation="true" ExecutionCycle="1">
+    <ControllerSimulationConfiguration ID="1194" Name="" Parent="3" AutoStartProgram="true" AutoStopSimulation="true" ExecutionCycle="-1">
       <ControllerId Value="{1249d834-91c6-46cb-8663-3ff095ba43c8}" />
       <TaskConfigurations>
         <ObjectRef ID="1195" />
+        <ObjectRef ID="3683" />
       </TaskConfigurations>
     </ControllerSimulationConfiguration>
     <TaskSimulationConfiguration ID="1195" Name="" Parent="1194" _active="true">
-      <_entryPoint Value="main" />
+      <_entryPoint Value="Path_10" />
       <_taskName Value="T_ROB_R" />
     </TaskSimulationConfiguration>
     <IRC5Controller ID="1196" Name="" Parent="9" StopAtBreakpoints="true">
+      <Attributes>
+        <Attribute Key="DesignerX">
+          <Value>
+            <Double Value="20" />
+          </Value>
+        </Attribute>
+        <Attribute Key="DesignerY">
+          <Value>
+            <Double Value="20" />
+          </Value>
+        </Attribute>
+      </Attributes>
       <UniqueId Value="{1249d834-91c6-46cb-8663-3ff095ba43c8}" />
       <SystemIdentity Value="{5E655EC4-635B-4AB9-ADD1-785B6AF68B0E}" />
       <RAPIDData ID="1197" />
@@ -4008,7 +4032,18 @@
         <ObjectRef ID="1199" />
         <ObjectRef ID="1201" />
         <ObjectRef ID="3657" />
+        <ObjectRef ID="3681" />
+        <ObjectRef ID="3744" />
+        <ObjectRef ID="3747" />
+        <ObjectRef ID="3750" />
+        <ObjectRef ID="3753" />
       </Declarations>
+      <Targets>
+        <ObjectRef ID="3746" />
+        <ObjectRef ID="3749" />
+        <ObjectRef ID="3752" />
+        <ObjectRef ID="3755" />
+      </Targets>
       <DefinedRoutineDeclarations>
         <ObjectRef ID="1203" />
         <ObjectRef ID="1230" />
@@ -4070,7 +4105,7 @@
       </DefinedMoveInstructionGroups>
       <ActiveWObj ID="1201" />
       <ActiveTool ID="3657" />
-      <ActivePath ID="-1" />
+      <ActivePath ID="3681" />
       <ActiveProcess ID="1976" />
       <Frame>
         <RowX X="1" Y="0" Z="0" W="0" />
@@ -6855,7 +6890,7 @@
     <RoutineArgument ID="1997" Name="Speed" Parent="1993" Value="v1000" />
     <RoutineArgument ID="1998" Name="V" Parent="1993" Enabled="false" />
     <RoutineArgument ID="1999" Name="T" Parent="1993" Enabled="false" />
-    <RoutineArgument ID="2000" Name="Zone" Parent="1993" Value="z100" />
+    <RoutineArgument ID="2000" Name="Zone" Parent="1993" Value="fine" />
     <RoutineArgument ID="2001" Name="Z" Parent="1993" Enabled="false" />
     <RoutineArgument ID="2002" Name="Inpos" Parent="1993" Enabled="false" />
     <RoutineArgument ID="2003" Name="Tool" Parent="1993" />
@@ -10837,7 +10872,7 @@
     <RoutineArgument ID="3214" Name="Speed" Parent="3210" Value="v1000" />
     <RoutineArgument ID="3215" Name="V" Parent="3210" Enabled="false" />
     <RoutineArgument ID="3216" Name="T" Parent="3210" Enabled="false" />
-    <RoutineArgument ID="3217" Name="Zone" Parent="3210" Value="z100" />
+    <RoutineArgument ID="3217" Name="Zone" Parent="3210" Value="fine" />
     <RoutineArgument ID="3218" Name="Z" Parent="3210" Enabled="false" />
     <RoutineArgument ID="3219" Name="Inpos" Parent="3210" Enabled="false" />
     <RoutineArgument ID="3220" Name="Tool" Parent="3210" />
@@ -12060,7 +12095,7 @@
         <RowX X="1" Y="0" Z="0" W="0" />
         <RowY X="0" Y="1" Z="0" W="0" />
         <RowZ X="0" Y="0" Z="1" W="0" />
-        <RowT X="0" Y="0" Z="0" W="1" />
+        <RowT X="0" Y="0" Z="-2.8421709430404E-14" W="1" />
       </Transform>
       <Source Value="" />
       <SourceFileTime HighPart="0" LowPart="0" />
@@ -12107,6 +12142,14 @@
       </CorrectionTransform>
     </MechanismLinkInstance>
     <MechanismInstance ID="3638" Name="IRB14000_0.5_0.5_R" Parent="1193" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0" NumJoints="7" NumTransforms="8" TraceTCP="false">
+      <Attributes>
+        <Attribute Key="TcpTraceData">
+          <Value>
+            <String Value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&#xD;&#xA;&lt;TcpTraceData xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;&#xD;&#xA;  &lt;TraceStopTCP&gt;false&lt;/TraceStopTCP&gt;&#xD;&#xA;  &lt;StopCategory&gt;0&lt;/StopCategory&gt;&#xD;&#xA;  &lt;FollowWorkobject&gt;true&lt;/FollowWorkobject&gt;&#xD;&#xA;  &lt;ClearTraceAtStart&gt;true&lt;/ClearTraceAtStart&gt;&#xD;&#xA;  &lt;PrimaryColor&gt;-1&lt;/PrimaryColor&gt;&#xD;&#xA;  &lt;ColorBySignal&gt;false&lt;/ColorBySignal&gt;&#xD;&#xA;  &lt;SignalDisplayName /&gt;&#xD;&#xA;  &lt;UseColorScale&gt;false&lt;/UseColorScale&gt;&#xD;&#xA;  &lt;ColorMin&gt;0&lt;/ColorMin&gt;&#xD;&#xA;  &lt;ColorMax&gt;1&lt;/ColorMax&gt;&#xD;&#xA;  &lt;UseSecondaryColor&gt;false&lt;/UseSecondaryColor&gt;&#xD;&#xA;  &lt;SecondaryColor&gt;-65536&lt;/SecondaryColor&gt;&#xD;&#xA;  &lt;ConditionType&gt;None&lt;/ConditionType&gt;&#xD;&#xA;  &lt;ConditionValue1&gt;0&lt;/ConditionValue1&gt;&#xD;&#xA;  &lt;ConditionValue2&gt;0&lt;/ConditionValue2&gt;&#xD;&#xA;  &lt;ShowEvents&gt;false&lt;/ShowEvents&gt;&#xD;&#xA;  &lt;StopPositionColor&gt;-16711681&lt;/StopPositionColor&gt;&#xD;&#xA;&lt;/TcpTraceData&gt;" />
+          </Value>
+        </Attribute>
+      </Attributes>
+      <UniqueId Value="{7aef6026-b1ce-4391-bf5c-464f8b0d0064}" />
       <Definition ID="28" DocID="1" />
       <ChildInstances>
         <ObjectRef ID="3639" />
@@ -12387,6 +12430,14 @@
       </CorrectionTransform>
     </MechanismLinkInstance>
     <MechanismInstance ID="3647" Name="IRB14000_0.5_0.5_L" Parent="1193" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0" NumJoints="7" NumTransforms="8" TraceTCP="false">
+      <Attributes>
+        <Attribute Key="TcpTraceData">
+          <Value>
+            <String Value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&#xD;&#xA;&lt;TcpTraceData xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;&#xD;&#xA;  &lt;TraceStopTCP&gt;false&lt;/TraceStopTCP&gt;&#xD;&#xA;  &lt;StopCategory&gt;0&lt;/StopCategory&gt;&#xD;&#xA;  &lt;FollowWorkobject&gt;true&lt;/FollowWorkobject&gt;&#xD;&#xA;  &lt;ClearTraceAtStart&gt;true&lt;/ClearTraceAtStart&gt;&#xD;&#xA;  &lt;PrimaryColor&gt;-1&lt;/PrimaryColor&gt;&#xD;&#xA;  &lt;ColorBySignal&gt;false&lt;/ColorBySignal&gt;&#xD;&#xA;  &lt;SignalDisplayName /&gt;&#xD;&#xA;  &lt;UseColorScale&gt;false&lt;/UseColorScale&gt;&#xD;&#xA;  &lt;ColorMin&gt;0&lt;/ColorMin&gt;&#xD;&#xA;  &lt;ColorMax&gt;1&lt;/ColorMax&gt;&#xD;&#xA;  &lt;UseSecondaryColor&gt;false&lt;/UseSecondaryColor&gt;&#xD;&#xA;  &lt;SecondaryColor&gt;-65536&lt;/SecondaryColor&gt;&#xD;&#xA;  &lt;ConditionType&gt;None&lt;/ConditionType&gt;&#xD;&#xA;  &lt;ConditionValue1&gt;0&lt;/ConditionValue1&gt;&#xD;&#xA;  &lt;ConditionValue2&gt;0&lt;/ConditionValue2&gt;&#xD;&#xA;  &lt;ShowEvents&gt;false&lt;/ShowEvents&gt;&#xD;&#xA;  &lt;StopPositionColor&gt;-16711681&lt;/StopPositionColor&gt;&#xD;&#xA;&lt;/TcpTraceData&gt;" />
+          </Value>
+        </Attribute>
+      </Attributes>
+      <UniqueId Value="{a4e9849d-2846-43d5-8dff-65f8ed1c37b7}" />
       <Definition ID="38" DocID="1" />
       <ChildInstances>
         <ObjectRef ID="3648" />
@@ -12724,16 +12775,16 @@
       </ChildInstances>
       <Transform>
         <RowX X="0.428060838229368" Y="0.118323252076558" Z="0.895970717597622" W="0" />
-        <RowY X="0.256435819592871" Y="-0.966547655088528" Z="0.00512843763734494" W="0" />
+        <RowY X="0.256435819592871" Y="-0.966547655088528" Z="0.00512843763734531" W="0" />
         <RowZ X="0.86660520954129" Y="0.22756370198451" Z="-0.444083519548972" W="0" />
-        <RowT X="-0.009578368507151" Y="-0.182609892722701" Z="0.198627808149411" W="1" />
+        <RowT X="-0.00957836850715094" Y="-0.182609892722701" Z="0.198627808149411" W="1" />
       </Transform>
       <Source Value="" />
       <SourceFileTime HighPart="0" LowPart="0" />
       <ComponentType Value="Mechanism" />
       <ClipPlane ID="-1" />
       <JointValues>
-        <Double Value="0" />
+        <Double Value="0.022" />
       </JointValues>
       <CalibFrames>
         <Element type="TDoubleMatrix4">
@@ -12744,8 +12795,23 @@
         </Element>
       </CalibFrames>
       <CalibFrameKnownValid />
-      <HomePos />
-      <UserDefinedPositions />
+      <HomePos>
+        <Double Value="0" />
+      </HomePos>
+      <UserDefinedPositions>
+        <Element type="TJointPosition">
+          <PositionName Value="PickPart1" />
+          <JointPosition>
+            <Double Value="0.02" />
+          </JointPosition>
+        </Element>
+        <Element type="TJointPosition">
+          <PositionName Value="Open" />
+          <JointPosition>
+            <Double Value="0.022" />
+          </JointPosition>
+        </Element>
+      </UserDefinedPositions>
       <TransitionTimes />
       <JointLimitsMatrix />
       <JointLimitsVector />
@@ -12804,7 +12870,7 @@
         <RowX X="1" Y="0" Z="0" W="0" />
         <RowY X="0" Y="1" Z="0" W="0" />
         <RowZ X="0" Y="0" Z="1" W="0" />
-        <RowT X="0" Y="0" Z="0" W="1" />
+        <RowT X="0.022" Y="0" Z="0" W="1" />
       </Transform>
       <Source Value="" />
       <SourceFileTime HighPart="0" LowPart="0" />
@@ -12833,7 +12899,7 @@
         <RowX X="1" Y="0" Z="0" W="0" />
         <RowY X="0" Y="1" Z="0" W="0" />
         <RowZ X="0" Y="0" Z="1" W="0" />
-        <RowT X="0" Y="0" Z="0" W="1" />
+        <RowT X="-0.022" Y="0" Z="0" W="1" />
       </Transform>
       <Source Value="" />
       <SourceFileTime HighPart="0" LowPart="0" />
@@ -12925,9 +12991,9 @@
       </ChildInstances>
       <Transform>
         <RowX X="0.428060838228858" Y="-0.118323252077604" Z="0.895970717597728" W="0" />
-        <RowY X="-0.256435819593016" Y="-0.966547655088484" Z="-0.00512843763854376" W="0" />
+        <RowY X="-0.256435819593016" Y="-0.966547655088483" Z="-0.00512843763854381" W="0" />
         <RowZ X="0.866605209541499" Y="-0.227563701984156" Z="-0.444083519548745" W="0" />
-        <RowT X="-0.00957836850687081" Y="0.182609892723107" Z="0.198627808149419" W="1" />
+        <RowT X="-0.00957836850688703" Y="0.182609892723078" Z="0.198627808149377" W="1" />
       </Transform>
       <Source Value="" />
       <SourceFileTime HighPart="0" LowPart="0" />
@@ -13115,22 +13181,6 @@
         <RowT X="-0.038" Y="0.0185" Z="0.0375" W="1" />
       </CorrectionTransform>
     </MechanismLinkInstance>
-    <Attachment ID="3675" Name="" Parent="1193" PhysicsRestoreMotionControl="0">
-      <SourceObject ID="3646" />
-      <TargetObject ID="3661" />
-      <OffsetTransform>
-        <RowX X="-0.813797681337149" Y="0.342020143315613" Z="-0.469846310421448" W="0" />
-        <RowY X="-0.106480839050634" Y="0.707038737648399" Z="0.699112333162298" W="0" />
-        <RowZ X="0.57131004259102" Y="0.618965625080203" Z="-0.538967893481347" W="0" />
-        <RowT X="0.5678217175995" Y="0.0047315353159" Z="0.4151320745258" W="1" />
-      </OffsetTransform>
-      <OriginalTransform>
-        <RowX X="1" Y="0" Z="0" W="0" />
-        <RowY X="0" Y="1" Z="0" W="0" />
-        <RowZ X="0" Y="0" Z="1" W="0" />
-        <RowT X="0" Y="0" Z="0" W="1" />
-      </OriginalTransform>
-    </Attachment>
     <Attachment ID="3676" Name="" Parent="1193" PhysicsRestoreMotionControl="0">
       <SourceObject ID="3655" />
       <TargetObject ID="3668" />
@@ -13161,13 +13211,16 @@
         <RowX X="1" Y="0" Z="0" W="0" />
         <RowY X="0" Y="0" Z="1" W="0" />
         <RowZ X="0" Y="-1" Z="0" W="0" />
-        <RowT X="0.218774" Y="-0.218596" Z="0" W="1" />
+        <RowT X="0.22" Y="-0.22" Z="0" W="1" />
       </Transform>
       <Source Value="" />
       <SourceFileTime HighPart="0" LowPart="0" />
       <ComponentType Value="Part" />
       <ClipPlane ID="-1" />
-      <Skeleton />
+      <Skeleton>
+        <Bones />
+        <InverseBindMatrices />
+      </Skeleton>
       <PhysicsMaterial SurfaceViscosity="5E-09" SurfaceRoughness="0.7" SurfaceAdhesion="0" SurfaceAdhesionOverlap="0" Density="7800" Damping="0.05" PoissonsRatio="0.3" Restitution="0.5" YoungsModulus="200000000000" CableDamping="0" CableYoungsModulus="0" />
       <PhysicsGeometry UseOriginal="false" />
       <PhysicsSurfaceVelocity Speed="0" Enabled="false">
@@ -13190,6 +13243,607 @@
         <RowY X="0" Y="0" Z="1" W="0" />
         <RowZ X="0" Y="-1" Z="0" W="0" />
         <RowT X="0.171804" Y="0.481105" Z="0" W="1" />
+      </Transform>
+      <Source Value="" />
+      <SourceFileTime HighPart="0" LowPart="0" />
+      <ComponentType Value="Part" />
+      <ClipPlane ID="-1" />
+      <Skeleton>
+        <Bones />
+        <InverseBindMatrices />
+      </Skeleton>
+      <PhysicsMaterial SurfaceViscosity="5E-09" SurfaceRoughness="0.7" SurfaceAdhesion="0" SurfaceAdhesionOverlap="0" Density="7800" Damping="0.05" PoissonsRatio="0.3" Restitution="0.5" YoungsModulus="200000000000" CableDamping="0" CableYoungsModulus="0" />
+      <PhysicsGeometry UseOriginal="false" />
+      <PhysicsSurfaceVelocity Speed="0" Enabled="false">
+        <Direction X="0" Y="0" Z="0" />
+        <ControlPoints />
+      </PhysicsSurfaceVelocity>
+    </ComponentInstance>
+    <PathProcedureDeclaration ID="3681" Name="Path_10" Parent="1198" ShowName="false" ZoneVisualization="0" ShowSpeeds="false">
+      <Attributes>
+        <Attribute Key="GfxObject.Invisible">
+          <Value>
+            <Integer Value="1" />
+          </Value>
+        </Attribute>
+      </Attributes>
+      <DeclarationInfo ID="3682" />
+      <RoutineCalls>
+        <ObjectRef ID="3776" />
+        <ObjectRef ID="3791" />
+        <ObjectRef ID="3773" />
+        <ObjectRef ID="3806" />
+        <ObjectRef ID="3714" />
+        <ObjectRef ID="3729" />
+        <ObjectRef ID="3836" />
+        <ObjectRef ID="3821" />
+      </RoutineCalls>
+    </PathProcedureDeclaration>
+    <RAPIDDeclarationInfo ID="3682" Name="" Parent="3681" Local="false" EnableSync="true">
+      <TaskName Value="" />
+      <ModuleName Value="Module1" />
+    </RAPIDDeclarationInfo>
+    <TaskSimulationConfiguration ID="3683" Name="" Parent="1194" _active="true">
+      <_entryPoint Value="main" />
+      <_taskName Value="T_ROB_L" />
+    </TaskSimulationConfiguration>
+    <MoveInstructionCall ID="3714" Name="MoveL" Parent="3681" Thickness="2" Reachable="3">
+      <ArgumentList ID="3715" />
+      <GroupName Value="Move" />
+      <TemplateGroupName Value="Default" />
+      <Color Red="1" Green="1" Blue="0" Alpha="1" />
+    </MoveInstructionCall>
+    <RoutineArgumentList ID="3715" Name="" Parent="3714">
+      <RoutineArguments>
+        <ObjectRef ID="3716" />
+        <ObjectRef ID="3717" />
+        <ObjectRef ID="3718" />
+        <ObjectRef ID="3719" />
+        <ObjectRef ID="3720" />
+        <ObjectRef ID="3721" />
+        <ObjectRef ID="3722" />
+        <ObjectRef ID="3723" />
+        <ObjectRef ID="3724" />
+        <ObjectRef ID="3725" />
+        <ObjectRef ID="3726" />
+        <ObjectRef ID="3727" />
+        <ObjectRef ID="3728" />
+      </RoutineArguments>
+    </RoutineArgumentList>
+    <RoutineArgument ID="3716" Name="Conc" Parent="3715" Enabled="false" />
+    <RoutineArgument ID="3717" Name="ToPoint" Parent="3715" Value="AboveAssemble" />
+    <RoutineArgument ID="3718" Name="ID" Parent="3715" Enabled="false" />
+    <RoutineArgument ID="3719" Name="Speed" Parent="3715" Value="v1000" />
+    <RoutineArgument ID="3720" Name="V" Parent="3715" Enabled="false" />
+    <RoutineArgument ID="3721" Name="T" Parent="3715" Enabled="false" />
+    <RoutineArgument ID="3722" Name="Zone" Parent="3715" Value="fine" />
+    <RoutineArgument ID="3723" Name="Z" Parent="3715" Enabled="false" />
+    <RoutineArgument ID="3724" Name="Inpos" Parent="3715" Enabled="false" />
+    <RoutineArgument ID="3725" Name="Tool" Parent="3715" Value="Servo" />
+    <RoutineArgument ID="3726" Name="WObj" Parent="3715" Value="wobj0" />
+    <RoutineArgument ID="3727" Name="Corr" Parent="3715" Enabled="false" />
+    <RoutineArgument ID="3728" Name="TLoad" Parent="3715" Enabled="false" />
+    <MoveInstructionCall ID="3729" Name="MoveL" Parent="3681" Thickness="2" Reachable="3">
+      <ArgumentList ID="3730" />
+      <GroupName Value="Move" />
+      <TemplateGroupName Value="Default" />
+      <Color Red="1" Green="1" Blue="0" Alpha="1" />
+    </MoveInstructionCall>
+    <RoutineArgumentList ID="3730" Name="" Parent="3729">
+      <RoutineArguments>
+        <ObjectRef ID="3731" />
+        <ObjectRef ID="3732" />
+        <ObjectRef ID="3733" />
+        <ObjectRef ID="3734" />
+        <ObjectRef ID="3735" />
+        <ObjectRef ID="3736" />
+        <ObjectRef ID="3737" />
+        <ObjectRef ID="3738" />
+        <ObjectRef ID="3739" />
+        <ObjectRef ID="3740" />
+        <ObjectRef ID="3741" />
+        <ObjectRef ID="3742" />
+        <ObjectRef ID="3743" />
+      </RoutineArguments>
+    </RoutineArgumentList>
+    <RoutineArgument ID="3731" Name="Conc" Parent="3730" Enabled="false" />
+    <RoutineArgument ID="3732" Name="ToPoint" Parent="3730" Value="Assemble" />
+    <RoutineArgument ID="3733" Name="ID" Parent="3730" Enabled="false" />
+    <RoutineArgument ID="3734" Name="Speed" Parent="3730" Value="v1000" />
+    <RoutineArgument ID="3735" Name="V" Parent="3730" Enabled="false" />
+    <RoutineArgument ID="3736" Name="T" Parent="3730" Enabled="false" />
+    <RoutineArgument ID="3737" Name="Zone" Parent="3730" Value="fine" />
+    <RoutineArgument ID="3738" Name="Z" Parent="3730" Enabled="false" />
+    <RoutineArgument ID="3739" Name="Inpos" Parent="3730" Enabled="false" />
+    <RoutineArgument ID="3740" Name="Tool" Parent="3730" Value="Servo" />
+    <RoutineArgument ID="3741" Name="WObj" Parent="3730" Value="wobj0" />
+    <RoutineArgument ID="3742" Name="Corr" Parent="3730" Enabled="false" />
+    <RoutineArgument ID="3743" Name="TLoad" Parent="3730" Enabled="false" />
+    <DataDeclaration ID="3744" Name="PickPart" Parent="1198" StorageType="0" DataType="robtarget" IsInline="false" FrameSize="0.075" ShowName="false" Dimension1="0" Dimension2="0" Dimension3="0">
+      <Attributes>
+        <Attribute Key="ConfigDataAssigned">
+          <Value>
+            <Integer Value="0" />
+          </Value>
+        </Attribute>
+        <Attribute Key="jointvalues">
+          <Value>
+            <String Value="0.868167281150818,-2.15855407714844,-1.39727878570557,0.761205673217773,-2.68291306495667,1.27684772014618,-2.79823923110962" />
+          </Value>
+        </Attribute>
+      </Attributes>
+      <DeclarationInfo ID="3745" />
+      <RoutineName Value="" />
+      <InitialExpression Value="[[30114.127889781,47651.111177125,-3416.904403367],[0.2181166,-0.273271949,-0.850294851,-0.393378009],[1,-2,-2,4],[-123.90997852,9E+09,9E+09,9E+09,9E+09,9E+09]]" />
+    </DataDeclaration>
+    <RAPIDDeclarationInfo ID="3745" Name="" Parent="3744" Local="false" EnableSync="true">
+      <TaskName Value="" />
+      <ModuleName Value="Module1" />
+    </RAPIDDeclarationInfo>
+    <Target ID="3746" Name="PickPart" Parent="1198" MultiColored="true" ApproachAxis="2" FrameSize="0.05" ShowReferenceFrame="false" ShowName="true">
+      <Attributes>
+        <Attribute Key="GfxObject.Invisible">
+          <Value>
+            <Integer Value="1" />
+          </Value>
+        </Attribute>
+      </Attributes>
+      <Robtarget ID="3744" />
+      <Workobject ID="1201" />
+      <ReferenceFrame>
+        <RowX X="0.999999999999945" Y="2.36659793579326E-07" Z="-2.33366968554034E-07" W="0" />
+        <RowY X="2.39332310617128E-07" Y="-0.999933650905486" Z="0.0115192789170498" W="0" />
+        <RowZ X="-2.30625334696289E-07" Y="-0.011519278917105" Z="-0.999933650905487" W="0" />
+        <RowT X="0.245000107996" Y="-0.245000258807" Z="0.039999996114" W="1" />
+      </ReferenceFrame>
+      <Color Red="0" Green="0" Blue="0" Alpha="0" />
+    </Target>
+    <DataDeclaration ID="3747" Name="AbovePickPart" Parent="1198" StorageType="0" DataType="robtarget" IsInline="false" FrameSize="0.075" ShowName="false" Dimension1="0" Dimension2="0" Dimension3="0">
+      <Attributes>
+        <Attribute Key="ConfigDataAssigned">
+          <Value>
+            <Integer Value="0" />
+          </Value>
+        </Attribute>
+        <Attribute Key="jointvalues">
+          <Value>
+            <String Value="0.710838556289673,-2.20780444145203,-1.30308711528778,1.08050727844238,-2.55586886405945,1.49347925186157,-2.81035757064819" />
+          </Value>
+        </Attribute>
+      </Attributes>
+      <DeclarationInfo ID="3748" />
+      <RoutineName Value="" />
+      <InitialExpression Value="[[30128.820250102,47580.740424877,-3362.755625243],[0.22134544,-0.27516983,-0.846681418,-0.398018012],[0,-2,-2,4],[-123.829994833,9E+09,9E+09,9E+09,9E+09,9E+09]]" />
+    </DataDeclaration>
+    <RAPIDDeclarationInfo ID="3748" Name="" Parent="3747" Local="false" EnableSync="true">
+      <TaskName Value="" />
+      <ModuleName Value="Module1" />
+    </RAPIDDeclarationInfo>
+    <Target ID="3749" Name="AbovePickPart" Parent="1198" MultiColored="true" ApproachAxis="2" FrameSize="0.05" ShowReferenceFrame="false" ShowName="true">
+      <Attributes>
+        <Attribute Key="GfxObject.Invisible">
+          <Value>
+            <Integer Value="1" />
+          </Value>
+        </Attribute>
+      </Attributes>
+      <Robtarget ID="3747" />
+      <Workobject ID="1201" />
+      <ReferenceFrame>
+        <RowX X="0.999950762513486" Y="-0.00558462173692487" Z="0.00820271593764012" W="0" />
+        <RowY X="-0.0057581903601924" Y="-0.999756739742386" Z="0.0212909507408798" W="0" />
+        <RowZ X="0.00808181863654068" Y="-0.0213371352278194" Z="-0.999739671548447" W="0" />
+        <RowT X="0.245000127367" Y="-0.245000223289" Z="0.129999991089" W="1" />
+      </ReferenceFrame>
+      <Color Red="0" Green="0" Blue="0" Alpha="0" />
+    </Target>
+    <DataDeclaration ID="3750" Name="AboveAssemble" Parent="1198" StorageType="0" DataType="robtarget" IsInline="false" FrameSize="0.075" ShowName="false" Dimension1="0" Dimension2="0" Dimension3="0">
+      <Attributes>
+        <Attribute Key="ConfigDataAssigned">
+          <Value>
+            <Integer Value="0" />
+          </Value>
+        </Attribute>
+        <Attribute Key="jointvalues">
+          <Value>
+            <String Value="1.46167576313019,-2.29896473884583,-1.83640825748444,1.11108362674713,-3.42680358886719,2.04943656921387,-2.36044788360596" />
+          </Value>
+        </Attribute>
+      </Attributes>
+      <DeclarationInfo ID="3751" />
+      <RoutineName Value="" />
+      <InitialExpression Value="[[30147.039200569,47428.861162537,-3681.426191956],[0.272011162,0.219686907,-0.388474164,0.85254643],[1,-2,-2,4],[-123.829982877,9E+09,9E+09,9E+09,9E+09,9E+09]]" />
+    </DataDeclaration>
+    <RAPIDDeclarationInfo ID="3751" Name="" Parent="3750" Local="false" EnableSync="true">
+      <TaskName Value="" />
+      <ModuleName Value="Module1" />
+    </RAPIDDeclarationInfo>
+    <Target ID="3752" Name="AboveAssemble" Parent="1198" MultiColored="true" ApproachAxis="2" FrameSize="0.05" ShowReferenceFrame="false" ShowName="true">
+      <Attributes>
+        <Attribute Key="GfxObject.Invisible">
+          <Value>
+            <Integer Value="1" />
+          </Value>
+        </Attribute>
+      </Attributes>
+      <Robtarget ID="3750" />
+      <Workobject ID="1201" />
+      <ReferenceFrame>
+        <RowX X="0.999950762174202" Y="-0.00558483471886112" Z="0.00820261229097304" W="0" />
+        <RowY X="-0.00575840134316248" Y="-0.99975673785797" Z="0.0212909821652716" W="0" />
+        <RowZ X="0.00808171028954163" Y="-0.0213371677772345" Z="-0.999739671729617" W="0" />
+        <RowT X="0.245000079285" Y="-2.38137E-07" Z="0.129999925808" W="1" />
+      </ReferenceFrame>
+      <Color Red="0" Green="0" Blue="0" Alpha="0" />
+    </Target>
+    <DataDeclaration ID="3753" Name="Assemble" Parent="1198" StorageType="0" DataType="robtarget" IsInline="false" FrameSize="0.075" ShowName="false" Dimension1="0" Dimension2="0" Dimension3="0">
+      <Attributes>
+        <Attribute Key="ConfigDataAssigned">
+          <Value>
+            <Integer Value="0" />
+          </Value>
+        </Attribute>
+        <Attribute Key="jointvalues">
+          <Value>
+            <String Value="1.42484855651855,-2.33929944038391,-1.80893611907959,0.975367844104767,-3.41354513168335,1.88536477088928,-2.38404679298401" />
+          </Value>
+        </Attribute>
+      </Attributes>
+      <DeclarationInfo ID="3754" />
+      <RoutineName Value="" />
+      <InitialExpression Value="[[29966.840319887,47477.218323487,-3519.824990271],[0.272011162,0.219686907,-0.388474164,0.85254643],[1,-2,-2,4],[-123.829990287,9E+09,9E+09,9E+09,9E+09,9E+09]]" />
+    </DataDeclaration>
+    <RAPIDDeclarationInfo ID="3754" Name="" Parent="3753" Local="false" EnableSync="true">
+      <TaskName Value="" />
+      <ModuleName Value="Module1" />
+    </RAPIDDeclarationInfo>
+    <Target ID="3755" Name="Assemble" Parent="1198" MultiColored="true" ApproachAxis="2" FrameSize="0.05" ShowReferenceFrame="false" ShowName="true">
+      <Attributes>
+        <Attribute Key="GfxObject.Invisible">
+          <Value>
+            <Integer Value="1" />
+          </Value>
+        </Attribute>
+      </Attributes>
+      <Robtarget ID="3753" />
+      <Workobject ID="1201" />
+      <ReferenceFrame>
+        <RowX X="0.999950761603693" Y="-0.00558481359206516" Z="0.00820269622359269" W="0" />
+        <RowY X="-0.00575838246271669" Y="-0.999756736777952" Z="0.0212910379858243" W="0" />
+        <RowZ X="0.00808179433094745" Y="-0.0213372239113391" Z="-0.999739669852182" W="0" />
+        <RowT X="0.245000075108" Y="-2.54137E-07" Z="0.089999937602" W="1" />
+      </ReferenceFrame>
+      <Color Red="0" Green="0" Blue="0" Alpha="0" />
+    </Target>
+    <EventTableEntry ID="3759" Name="" Parent="4" ActivationMode="2" Cyclic="false">
+      <Group Value="" />
+      <Trigger ID="3760" />
+      <Actions>
+        <ObjectRef ID="3761" />
+        <ObjectRef ID="3762" />
+      </Actions>
+      <Comment Value="" />
+    </EventTableEntry>
+    <EventTableTriggerIO ID="3760" Name="Gripper" Parent="3759" Operator="0">
+      <IOValue>
+        <Integer Value="1" />
+      </IOValue>
+      <IRC5Controller ID="-1" />
+      <SignalSource ID="1196" />
+    </EventTableTriggerIO>
+    <EventTableActionMechanicalPose ID="3761" Name="" Parent="3759">
+      <VirtualSignal Value="" />
+      <Mechanism ID="3661" />
+      <ToPoseName Value="PickPart1" />
+      <VirtualSignalValue>
+        <Integer Value="1" />
+      </VirtualSignalValue>
+    </EventTableActionMechanicalPose>
+    <EventTableActionAttach ID="3762" Name="" Parent="3759" MountObject="false" FlangeIndext="0" FindNearest="true">
+      <AttachmentParent ID="3661" />
+      <AttachmentChild ID="-1" />
+      <Offset>
+        <RowX X="1" Y="0" Z="0" W="0" />
+        <RowY X="0" Y="1" Z="0" W="0" />
+        <RowZ X="0" Y="0" Z="1" W="0" />
+        <RowT X="0" Y="0" Z="0" W="1" />
+      </Offset>
+    </EventTableActionAttach>
+    <EventTableEntry ID="3763" Name="" Parent="4" ActivationMode="2" Cyclic="false">
+      <Group Value="" />
+      <Trigger ID="3764" />
+      <Actions>
+        <ObjectRef ID="3840" />
+        <ObjectRef ID="3841" />
+      </Actions>
+      <Comment Value="" />
+    </EventTableEntry>
+    <EventTableTriggerIO ID="3764" Name="Gripper" Parent="3763" Operator="0">
+      <IOValue>
+        <Integer Value="0" />
+      </IOValue>
+      <IRC5Controller ID="-1" />
+      <SignalSource ID="1196" />
+    </EventTableTriggerIO>
+    <ActionInstructionCall ID="3773" Name="Set" Parent="3681" TrigValidity="0">
+      <ArgumentList ID="3774" />
+      <InstructionTemplateName Value="Default" />
+      <Color Red="1" Green="1" Blue="0.5019608" Alpha="0.5019608" />
+    </ActionInstructionCall>
+    <RoutineArgumentList ID="3774" Name="" Parent="3773">
+      <RoutineArguments>
+        <ObjectRef ID="3775" />
+      </RoutineArguments>
+    </RoutineArgumentList>
+    <RoutineArgument ID="3775" Name="Signal" Parent="3774" Value="Gripper" />
+    <MoveInstructionCall ID="3776" Name="MoveL" Parent="3681" Thickness="2" Reachable="3">
+      <ArgumentList ID="3777" />
+      <GroupName Value="Move" />
+      <TemplateGroupName Value="Default" />
+      <Color Red="1" Green="1" Blue="0" Alpha="1" />
+    </MoveInstructionCall>
+    <RoutineArgumentList ID="3777" Name="" Parent="3776">
+      <RoutineArguments>
+        <ObjectRef ID="3778" />
+        <ObjectRef ID="3779" />
+        <ObjectRef ID="3780" />
+        <ObjectRef ID="3781" />
+        <ObjectRef ID="3782" />
+        <ObjectRef ID="3783" />
+        <ObjectRef ID="3784" />
+        <ObjectRef ID="3785" />
+        <ObjectRef ID="3786" />
+        <ObjectRef ID="3787" />
+        <ObjectRef ID="3788" />
+        <ObjectRef ID="3789" />
+        <ObjectRef ID="3790" />
+      </RoutineArguments>
+    </RoutineArgumentList>
+    <RoutineArgument ID="3778" Name="Conc" Parent="3777" Enabled="false" />
+    <RoutineArgument ID="3779" Name="ToPoint" Parent="3777" Value="AbovePickPart" />
+    <RoutineArgument ID="3780" Name="ID" Parent="3777" Enabled="false" />
+    <RoutineArgument ID="3781" Name="Speed" Parent="3777" Value="v1000" />
+    <RoutineArgument ID="3782" Name="V" Parent="3777" Enabled="false" />
+    <RoutineArgument ID="3783" Name="T" Parent="3777" Enabled="false" />
+    <RoutineArgument ID="3784" Name="Zone" Parent="3777" Value="fine" />
+    <RoutineArgument ID="3785" Name="Z" Parent="3777" Enabled="false" />
+    <RoutineArgument ID="3786" Name="Inpos" Parent="3777" Enabled="false" />
+    <RoutineArgument ID="3787" Name="Tool" Parent="3777" Value="Servo" />
+    <RoutineArgument ID="3788" Name="WObj" Parent="3777" Value="wobj0" />
+    <RoutineArgument ID="3789" Name="Corr" Parent="3777" Enabled="false" />
+    <RoutineArgument ID="3790" Name="TLoad" Parent="3777" Enabled="false" />
+    <MoveInstructionCall ID="3791" Name="MoveL" Parent="3681" Thickness="2" Reachable="3">
+      <ArgumentList ID="3792" />
+      <GroupName Value="Move" />
+      <TemplateGroupName Value="Default" />
+      <Color Red="1" Green="1" Blue="0" Alpha="1" />
+    </MoveInstructionCall>
+    <RoutineArgumentList ID="3792" Name="" Parent="3791">
+      <RoutineArguments>
+        <ObjectRef ID="3793" />
+        <ObjectRef ID="3794" />
+        <ObjectRef ID="3795" />
+        <ObjectRef ID="3796" />
+        <ObjectRef ID="3797" />
+        <ObjectRef ID="3798" />
+        <ObjectRef ID="3799" />
+        <ObjectRef ID="3800" />
+        <ObjectRef ID="3801" />
+        <ObjectRef ID="3802" />
+        <ObjectRef ID="3803" />
+        <ObjectRef ID="3804" />
+        <ObjectRef ID="3805" />
+      </RoutineArguments>
+    </RoutineArgumentList>
+    <RoutineArgument ID="3793" Name="Conc" Parent="3792" Enabled="false" />
+    <RoutineArgument ID="3794" Name="ToPoint" Parent="3792" Value="PickPart" />
+    <RoutineArgument ID="3795" Name="ID" Parent="3792" Enabled="false" />
+    <RoutineArgument ID="3796" Name="Speed" Parent="3792" Value="v1000" />
+    <RoutineArgument ID="3797" Name="V" Parent="3792" Enabled="false" />
+    <RoutineArgument ID="3798" Name="T" Parent="3792" Enabled="false" />
+    <RoutineArgument ID="3799" Name="Zone" Parent="3792" Value="fine" />
+    <RoutineArgument ID="3800" Name="Z" Parent="3792" Enabled="false" />
+    <RoutineArgument ID="3801" Name="Inpos" Parent="3792" Enabled="false" />
+    <RoutineArgument ID="3802" Name="Tool" Parent="3792" Value="Servo" />
+    <RoutineArgument ID="3803" Name="WObj" Parent="3792" Value="wobj0" />
+    <RoutineArgument ID="3804" Name="Corr" Parent="3792" Enabled="false" />
+    <RoutineArgument ID="3805" Name="TLoad" Parent="3792" Enabled="false" />
+    <MoveInstructionCall ID="3806" Name="MoveL" Parent="3681" Thickness="2" Reachable="3">
+      <ArgumentList ID="3807" />
+      <GroupName Value="Move" />
+      <TemplateGroupName Value="Default" />
+      <Color Red="1" Green="1" Blue="0" Alpha="1" />
+    </MoveInstructionCall>
+    <RoutineArgumentList ID="3807" Name="" Parent="3806">
+      <RoutineArguments>
+        <ObjectRef ID="3808" />
+        <ObjectRef ID="3809" />
+        <ObjectRef ID="3810" />
+        <ObjectRef ID="3811" />
+        <ObjectRef ID="3812" />
+        <ObjectRef ID="3813" />
+        <ObjectRef ID="3814" />
+        <ObjectRef ID="3815" />
+        <ObjectRef ID="3816" />
+        <ObjectRef ID="3817" />
+        <ObjectRef ID="3818" />
+        <ObjectRef ID="3819" />
+        <ObjectRef ID="3820" />
+      </RoutineArguments>
+    </RoutineArgumentList>
+    <RoutineArgument ID="3808" Name="Conc" Parent="3807" Enabled="false" />
+    <RoutineArgument ID="3809" Name="ToPoint" Parent="3807" Value="AbovePickPart" />
+    <RoutineArgument ID="3810" Name="ID" Parent="3807" Enabled="false" />
+    <RoutineArgument ID="3811" Name="Speed" Parent="3807" Value="v1000" />
+    <RoutineArgument ID="3812" Name="V" Parent="3807" Enabled="false" />
+    <RoutineArgument ID="3813" Name="T" Parent="3807" Enabled="false" />
+    <RoutineArgument ID="3814" Name="Zone" Parent="3807" Value="fine" />
+    <RoutineArgument ID="3815" Name="Z" Parent="3807" Enabled="false" />
+    <RoutineArgument ID="3816" Name="Inpos" Parent="3807" Enabled="false" />
+    <RoutineArgument ID="3817" Name="Tool" Parent="3807" Value="Servo" />
+    <RoutineArgument ID="3818" Name="WObj" Parent="3807" Value="wobj0" />
+    <RoutineArgument ID="3819" Name="Corr" Parent="3807" Enabled="false" />
+    <RoutineArgument ID="3820" Name="TLoad" Parent="3807" Enabled="false" />
+    <MoveInstructionCall ID="3821" Name="MoveL" Parent="3681" Thickness="2" Reachable="3">
+      <ArgumentList ID="3822" />
+      <GroupName Value="Move" />
+      <TemplateGroupName Value="Default" />
+      <Color Red="1" Green="1" Blue="0" Alpha="1" />
+    </MoveInstructionCall>
+    <RoutineArgumentList ID="3822" Name="" Parent="3821">
+      <RoutineArguments>
+        <ObjectRef ID="3823" />
+        <ObjectRef ID="3824" />
+        <ObjectRef ID="3825" />
+        <ObjectRef ID="3826" />
+        <ObjectRef ID="3827" />
+        <ObjectRef ID="3828" />
+        <ObjectRef ID="3829" />
+        <ObjectRef ID="3830" />
+        <ObjectRef ID="3831" />
+        <ObjectRef ID="3832" />
+        <ObjectRef ID="3833" />
+        <ObjectRef ID="3834" />
+        <ObjectRef ID="3835" />
+      </RoutineArguments>
+    </RoutineArgumentList>
+    <RoutineArgument ID="3823" Name="Conc" Parent="3822" Enabled="false" />
+    <RoutineArgument ID="3824" Name="ToPoint" Parent="3822" Value="AboveAssemble" />
+    <RoutineArgument ID="3825" Name="ID" Parent="3822" Enabled="false" />
+    <RoutineArgument ID="3826" Name="Speed" Parent="3822" Value="v1000" />
+    <RoutineArgument ID="3827" Name="V" Parent="3822" Enabled="false" />
+    <RoutineArgument ID="3828" Name="T" Parent="3822" Enabled="false" />
+    <RoutineArgument ID="3829" Name="Zone" Parent="3822" Value="fine" />
+    <RoutineArgument ID="3830" Name="Z" Parent="3822" Enabled="false" />
+    <RoutineArgument ID="3831" Name="Inpos" Parent="3822" Enabled="false" />
+    <RoutineArgument ID="3832" Name="Tool" Parent="3822" Value="Servo" />
+    <RoutineArgument ID="3833" Name="WObj" Parent="3822" Value="wobj0" />
+    <RoutineArgument ID="3834" Name="Corr" Parent="3822" Enabled="false" />
+    <RoutineArgument ID="3835" Name="TLoad" Parent="3822" Enabled="false" />
+    <ActionInstructionCall ID="3836" Name="Reset" Parent="3681" TrigValidity="0">
+      <ArgumentList ID="3837" />
+      <InstructionTemplateName Value="Default" />
+      <Color Red="1" Green="1" Blue="0.5019608" Alpha="0.5019608" />
+    </ActionInstructionCall>
+    <RoutineArgumentList ID="3837" Name="" Parent="3836">
+      <RoutineArguments>
+        <ObjectRef ID="3838" />
+      </RoutineArguments>
+    </RoutineArgumentList>
+    <RoutineArgument ID="3838" Name="Signal" Parent="3837" Value="Gripper" />
+    <EventTableActionMechanicalPose ID="3840" Name="" Parent="3763">
+      <VirtualSignal Value="" />
+      <Mechanism ID="3661" />
+      <ToPoseName Value="Open" />
+      <VirtualSignalValue>
+        <Integer Value="1" />
+      </VirtualSignalValue>
+    </EventTableActionMechanicalPose>
+    <EventTableActionDetach ID="3841" Name="" Parent="3763">
+      <AttachmentParent ID="3661" />
+      <AttachmentChild ID="-1" />
+    </EventTableActionDetach>
+    <Attachment ID="3845" Name="" Parent="1193" PhysicsRestoreMotionControl="0">
+      <SourceObject ID="3646" />
+      <TargetObject ID="3661" />
+      <OffsetTransform>
+        <RowX X="-0.813797681337149" Y="0.342020143315613" Z="-0.469846310421448" W="0" />
+        <RowY X="-0.106480839050635" Y="0.707038737648398" Z="0.699112333162298" W="0" />
+        <RowZ X="0.57131004259102" Y="0.618965625080203" Z="-0.538967893481347" W="0" />
+        <RowT X="0.5678217175995" Y="0.0047315353159" Z="0.4151320745258" W="1" />
+      </OffsetTransform>
+      <OriginalTransform>
+        <RowX X="0.999950763814952" Y="-0.00558468446961447" Z="0.00820251456984911" W="0" />
+        <RowY X="-0.00575825151941448" Y="-0.999756732183278" Z="0.0212912891496236" W="0" />
+        <RowZ X="0.0080816140301861" Y="-0.021337472989756" Z="-0.999739665993642" W="0" />
+        <RowT X="0.244077338804404" Y="-0.242563759001365" Z="0.244170268900809" W="1" />
+      </OriginalTransform>
+    </Attachment>
+    <PartDef ID="3846" Name="" Parent="1193">
+      <GeoPart StreamID="-1" />
+      <GfxData StreamType="GfxDataStream" StreamID="0ed38f3ffe66448ea4b2db827a9ef622" StreamChangeRef="e432d9c0aeb24f81a029e10d145f63e0" />
+      <BoundingBox>
+        <Min X="2.44658440351486E-06" Y="0" Z="0" />
+        <Max X="0.0199975528717041" Y="0.03" Z="0.02" />
+      </BoundingBox>
+    </PartDef>
+    <ComponentInstance ID="3847" Name="Part 1_2" Parent="1193" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0">
+      <Definition ID="3846" />
+      <Transform>
+        <RowX X="1" Y="0" Z="0" W="0" />
+        <RowY X="0" Y="0" Z="-1" W="0" />
+        <RowZ X="0" Y="1" Z="0" W="0" />
+        <RowT X="0.285" Y="-0.255" Z="0.03" W="1" />
+      </Transform>
+      <Source Value="" />
+      <SourceFileTime HighPart="0" LowPart="0" />
+      <ComponentType Value="Part" />
+      <ClipPlane ID="-1" />
+      <Skeleton />
+      <PhysicsMaterial SurfaceViscosity="5E-09" SurfaceRoughness="0.7" SurfaceAdhesion="0" SurfaceAdhesionOverlap="0" Density="7800" Damping="0.05" PoissonsRatio="0.3" Restitution="0.5" YoungsModulus="200000000000" CableDamping="0" CableYoungsModulus="0" />
+      <PhysicsGeometry UseOriginal="false" />
+      <PhysicsSurfaceVelocity Speed="0" Enabled="false">
+        <Direction X="0" Y="0" Z="0" />
+        <ControlPoints />
+      </PhysicsSurfaceVelocity>
+    </ComponentInstance>
+    <EventTableTriggerIO ID="3848" Name="Gripper" Parent="3759" Operator="0">
+      <IOValue>
+        <Integer Value="1" />
+      </IOValue>
+      <IRC5Controller ID="-1" />
+      <SignalSource ID="1196" />
+    </EventTableTriggerIO>
+    <EventTableTriggerIO ID="3849" Name="Gripper" Parent="3763" Operator="0">
+      <IOValue>
+        <Integer Value="0" />
+      </IOValue>
+      <IRC5Controller ID="-1" />
+      <SignalSource ID="1196" />
+    </EventTableTriggerIO>
+    <PartDef ID="3850" Name="" Parent="1193">
+      <GeoPart StreamID="-1" />
+      <GfxData StreamType="GfxDataStream" StreamID="0c6cde4ca5fe46358c431ea9dfb14a2f" StreamChangeRef="2173ec6ac9164333b67e0ab7b2a98554" />
+      <BoundingBox>
+        <Min X="2.44658440351486E-06" Y="0" Z="0" />
+        <Max X="0.0199975528717041" Y="0.03" Z="0.02" />
+      </BoundingBox>
+    </PartDef>
+    <ComponentInstance ID="3851" Name="Part 1_3" Parent="1193" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0">
+      <Definition ID="3850" />
+      <Transform>
+        <RowX X="1" Y="0" Z="0" W="0" />
+        <RowY X="0" Y="0" Z="-1" W="0" />
+        <RowZ X="0" Y="1" Z="0" W="0" />
+        <RowT X="0.335" Y="-0.255" Z="0.03" W="1" />
+      </Transform>
+      <Source Value="" />
+      <SourceFileTime HighPart="0" LowPart="0" />
+      <ComponentType Value="Part" />
+      <ClipPlane ID="-1" />
+      <Skeleton />
+      <PhysicsMaterial SurfaceViscosity="5E-09" SurfaceRoughness="0.7" SurfaceAdhesion="0" SurfaceAdhesionOverlap="0" Density="7800" Damping="0.05" PoissonsRatio="0.3" Restitution="0.5" YoungsModulus="200000000000" CableDamping="0" CableYoungsModulus="0" />
+      <PhysicsGeometry UseOriginal="false" />
+      <PhysicsSurfaceVelocity Speed="0" Enabled="false">
+        <Direction X="0" Y="0" Z="0" />
+        <ControlPoints />
+      </PhysicsSurfaceVelocity>
+    </ComponentInstance>
+    <PartDef ID="3852" Name="" Parent="1193">
+      <GeoPart StreamID="-1" />
+      <GfxData StreamType="GfxDataStream" StreamID="703e4ee5744b4518aebd8d0dcc7dd238" StreamChangeRef="cc7b1a0456e240598010d9104d828c3b" />
+      <BoundingBox>
+        <Min X="2.44658440351486E-06" Y="0" Z="0" />
+        <Max X="0.0199975528717041" Y="0.03" Z="0.02" />
+      </BoundingBox>
+    </PartDef>
+    <ComponentInstance ID="3853" Name="Part 1_1" Parent="1193" PickingEnabled="true" Detectable="true" PhysicsMotionControl="0">
+      <Definition ID="3852" />
+      <Transform>
+        <RowX X="1" Y="0" Z="0" W="0" />
+        <RowY X="0" Y="0" Z="-1" W="0" />
+        <RowZ X="0" Y="1" Z="0" W="0" />
+        <RowT X="0.235" Y="-0.255" Z="0.03" W="1" />
       </Transform>
       <Source Value="" />
       <SourceFileTime HighPart="0" LowPart="0" />
